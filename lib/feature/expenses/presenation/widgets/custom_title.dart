@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTitle extends StatelessWidget {
   const CustomTitle({
@@ -12,10 +13,10 @@ class CustomTitle extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Text(
+         Text(
             'Expenses',
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 24.sp,
               fontFamily: 'Poppins',
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:property_management_systems/feature/expenses/presenation/widgets/custom_money_widget.dart';
 
 import '../../home/presentation/widgets/bottom_nav_bar_widget.dart';
@@ -10,16 +11,16 @@ class ExpensesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: BottomNavBarWidget(),
+    return  Scaffold(
+      bottomNavigationBar: const BottomNavBarWidget(),
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 10),
-            CustomTitle(),
-            SizedBox(height: 10),
+            SizedBox(height: 10.h),
+            const CustomTitle(),
+            SizedBox(height: 10.h),
             CustomMoneyWidget(),
-            SizedBox(height: 10),
+            SizedBox(height: 10.h),
             CustomRow(),
             CustomRow(),
             CustomRow(),
